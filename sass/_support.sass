@@ -1,0 +1,34 @@
+.support
+  &__blocks
+    padding: 60px 0 60px
+    display: flex
+
+  &__block
+    display: flex
+    flex-direction: column
+    width: 538px
+
+    &-title
+      display: flex
+      align-items: center
+      padding-bottom: 6px
+
+    &-icon
+      margin-right: 18px
+
+    &-name
+      font-weight: bold
+
+    &-description
+      line-height: 1.5
+
+@media (max-width: 720px)
+  .support
+    &__blocks
+      flex-direction: column
+
+    &__block
+      width: auto
+
+      &:not(:last-child)
+        padding-bottom: 32px

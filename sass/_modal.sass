@@ -1,0 +1,166 @@
+a.close-modal
+  display: none !important
+
+.blocker
+  background-color: rgba(0, 0, 0, .2)
+  margin-top: 66px
+  padding: 0
+
+.basket-modal
+  box-shadow: none
+  position: absolute
+  right: 0
+  border-radius: 0
+  padding: 28px 33px 30px
+  display: none
+  min-width: 532px
+  max-height: 540px
+
+  &__continue-link
+    position: relative
+    padding-left: 23px
+    margin-bottom: 40px
+    color: #1962b2
+
+    &:hover,
+    &:active
+      text-decoration: underline
+      color: #1962b2
+
+    &::before
+      @extend %fal
+      position: absolute
+      left: 2px
+      font-size: 17px
+      content: "\f104"
+      color: #1962b2
+
+  &__shopping-button
+    @extend %btn-default
+    width: 100%
+    height: 45px
+    color: #fff
+    background: #3581d5
+    margin-top: 34px
+
+    &:hover,
+    &:active
+      opacity: .85
+
+  &__delete-all-button
+    @extend %btn-reset
+    display: block
+    margin: 25px 0 0 auto
+    text-align: right
+    background: transparent
+    font-size: 14px
+    border: none
+
+    &:hover,
+    &:active
+      text-decoration: underline
+
+.shopping-cart
+  border-bottom: 1px solid #bdbdbd
+  margin-bottom: 30px
+  min-height: 250px
+
+  &__title
+    font-size: 20px
+    font-weight: 800
+    padding-bottom: 22px
+
+.cart-items
+  max-height: 210px
+  overflow: auto
+
+.cart-item
+  margin-bottom: 32px
+  display: flex
+  position: relative
+
+  &__name
+    text-transform: uppercase
+    font-weight: 300
+    padding-right: 14px
+
+  &__img
+    flex-shrink: 0
+
+  &__price
+    font-weight: 700
+    white-space: nowrap
+
+  &__text
+    position: relative
+    display: flex
+    justify-content: space-between
+    flex-grow: 1
+
+  &__btn-del
+    @extend %btn-reset
+    position: absolute
+    bottom: 0
+    right: 0
+    background: transparent
+    font-size: 14px
+    border: none
+
+    &:hover,
+    &:active
+      text-decoration: underline
+
+.shopping-total
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-weight: 700
+  font-size: 20px
+
+
+@media (max-width: 720px)
+  .basket-modal
+    min-width: initial
+    padding-left: 17px
+    padding-right: 17px
+
+    &__delete-all-button
+      font-size: 12px
+
+  .cart-item
+    &__name
+      line-height: 1.5
+
+    &__text
+      flex-direction: column
+      align-items: flex-start
+      font-size: 12px
+
+    &__btn-del
+      position: initial
+      font-size: 12px
+      padding-top: 15px
+
+    &__price
+      padding-top: 27px
+
+
+.jq-toast
+  &-single
+    background-color: #3581d5
+
+.promotion-end
+  display: none
+  transform: translateY(-66px)
+  a.close-modal
+      display: block!important
+  &.blocker
+    margin: 0
+
+  .promotion-end
+    .blocker
+      margin: 0
+
+
+
+

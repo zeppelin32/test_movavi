@@ -1,0 +1,67 @@
+.header
+  height: 66px
+  background: #212121
+
+  &__logo
+    height: 21px
+
+  &__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 100%
+
+  &__basket
+    display: flex
+    align-items: center
+    color: #fff
+    font-size: 14px
+    font-weight: 300
+    position: relative
+
+    &:active,
+    &:focus
+      outline: none
+
+    &::before
+      @extend %fas
+      font-size: 16px
+      content: "\f07a"
+      margin-right: 7px
+
+  &__menu::before
+    display: none
+    @extend %far
+    content: '\f0c9'
+    font-size: 25px
+    color: #fff
+
+  &__settings::before
+    display: none
+    @extend %far
+    content: '\f142'
+    font-size: 25px
+    color: #fff
+
+  &__left,
+  &__right
+    display: flex
+    align-items: center
+
+
+@media (max-width: 720px)
+  .header
+    &__menu::before
+      display: block
+      margin-right: 32px
+
+    &__settings::before
+      display: block
+      margin-left: 32px
+
+
+@media (max-width: 540px)
+  .header
+    &__menu::before
+      margin-right: 16px
+

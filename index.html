@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Movavi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+  <link rel="stylesheet" href="js/jquery-toast-plugin-master/dist/jquery.toast.min.css">
+  <link href="sass/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header__content">
+
+      <div class="header__left">
+        <div class="header__menu"></div>
+        <a class="header__logo" href="#">
+          <img alt="logo" height="21" src="img/logo.svg" width="95">
+        </a>
+      </div>
+
+
+      <div class="header__right">
+        <a id="basketModalLink" href="#basket-modal" rel="modal:open" class="header__basket">
+          0 руб.
+        </a>
+        <div class="header__settings"></div>
+      </div>
+
+
+    </div>
+  </div>
+</header>
+
+<div class="movavi-video-suite">
+  <div class="container__suite">
+    <h1 class="movavi-video-suite__h1">Movavi Video Suite for Windows</h1>
+    <div class="movavi-video-suite__tariffs">
+
+      <div class="tariff">
+        <div class="tariff__text">
+          <div class="tariff__title">Video Suite</div>
+          <div class="tariff__desc">Lifetime / 1 PC</div>
+
+          <div class="tariff__set">
+            <div class="tariff__set-item">
+              <span class="tariff__item-name">Video Editor Plus</span>
+              <span class="tariff__item-cost">1490 руб.</span>
+            </div>
+            <div class="tariff__set-item">
+              <span class="tariff__item-name">Video Converter Premium</span>
+              <span class="tariff__item-cost">1290 руб.</span>
+            </div>
+            <div class="tariff__set-item">
+              <span class="tariff__item-name">Screen Recorder</span>
+              <span class="tariff__item-cost">990 руб.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tariff__buy">
+          <div class="tariff__cost">
+            <div class="tariff__cost_old" id="tariffCostOld">3770 руб.</div>
+            <div class="tariff__cost_new" id="tariffCostNew">1 990&nbsp;<span>руб.</span>
+            </div>
+          </div>
+          <button id="buyProduct" class="tariff__button">Buy Now</button>
+        </div>
+
+      </div>
+
+      <div class="tariff__divider"></div>
+
+      <div class="tariff-best">
+        <div class="tariff-best__label">BEST VALUE</div>
+        <div class="tariff">
+
+          <div class="tariff__text">
+            <div class="tariff__title">Video Suite + Photo Editor</div>
+            <div class="tariff__desc">Lifetime / 1 PC</div>
+
+            <div class="tariff__set">
+              <div class="tariff__set-item">
+                <span class="tariff__item-name">Video Editor Plus</span>
+                <span class="tariff__item-cost">1490 руб.</span>
+              </div>
+              <div class="tariff__set-item">
+                <span class="tariff__item-name">Video Converter Premium</span>
+                <span class="tariff__item-cost">1290 руб.</span>
+              </div>
+              <div class="tariff__set-item">
+                <span class="tariff__item-name">Screen Recorder</span>
+                <span class="tariff__item-cost">990 руб.</span>
+              </div>
+              <div class="tariff__set-item">
+                <span class="font-bold">Photo Editor</span>
+                <span class="tariff__item-cost">1290 руб.</span>
+              </div>
+              <ul class="tariff__list">
+                <li>Edit, enhance and retouch images</li>
+                <li>Restore old photos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tariff__buy tariff__buy_best">
+
+            <div class="tariff__cost">
+              <div class="tariff__cost_old" id="bestTariffCostOld">5060 руб.</div>
+              <div class="tariff__cost_new" id="bestTariffCostNew">2 490&nbsp;<span>руб.</span>
+              </div>
+            </div>
+            <div class="tariff__alert">Offer valid until September 30, 2018</div>
+            <button id="buyProductBest" class="tariff-best__button">Buy Now</button>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="movavi-video-suite__pay-systems">
+      <img src="img/paysystems/mastercard.png" alt="mastercard-paysystem" class="mastercard">
+      <img src="img/paysystems/visa.png" alt="visa-paysystem" class="visa">
+      <img src="img/paysystems/paypal.png" alt="paypal-paysystem" class="paypal">
+      <img src="img/paysystems/discover.png" alt="discover-paysystem" class="discover">
+      <img src="img/paysystems/amex.png" alt="amex-paysystem" class="amex">
+    </div>
+
+    <div class="movavi-video-suite__advantages">
+      <div class="advantage">
+        <div class="advantage__title">
+          <img class="advantage__icon" src="img/advantages/1.png" width="32"></img>
+          <div class="advantage__name">30 Day Money Back Guarantee</div>
+        </div>
+        <div class="advantage__description">
+          If you experience technical or other problems that cannot be solved, you can get a complete refund of your
+          purchase price within 30 days. Check our Refund Policy to find out if you are eligible for a full refund.
+        </div>
+      </div>
+
+      <div class="block-divider"></div>
+
+      <div class="advantage">
+        <div class="advantage__title">
+          <img class="advantage__icon" src="img/advantages/2.png" width="27"></img>
+          <div class="advantage__name">Totally Secure Payments</div>
+        </div>
+        <div class="advantage__description">
+          Our payments are processed via the 2Checkout payment gateway. 2Checkout provides the highest standards of
+          online security. It guarantees the safety of your payments and personal information.
+        </div>
+      </div>
+
+      <div class="block-divider"></div>
+
+      <div class="advantage">
+        <div class="advantage__title">
+          <img class="advantage__icon" src="img/advantages/3.png" width="32"></img>
+          <div class="advantage__name">What Do I Get?</div>
+        </div>
+        <div class="advantage__description">
+          15 minutes after purchase, you will receive an email with a download link and activation key to the account
+          used to make the purchase. Use these to download and activate the program.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="support">
+  <div class="container">
+    <div class="support__blocks">
+
+      <div class="support__block">
+        <div class="support__block-title">
+          <img class="support__block-icon" src="img/support/1.png" width="31"/>
+          <div class="support__block-name">24/7 Payment Support</div>
+        </div>
+        <div class="support__block-description">
+          Contact the 2Checkout 24/7 English language support service by phone at +31 88 000 0008(international) with
+          any payment-related questions.
+        </div>
+      </div>
+
+      <div class="block-divider"></div>
+
+      <div class="support__block">
+        <div class="support__block-title">
+          <img class="support__block-icon" src="img/support/2.png" width="32"/>
+          <div class="support__block-name">Movavi Software Support</div>
+        </div>
+        <div class="support__block-description">
+          If you have any problems activating or using the programs, visit our Help Center for answers, live support,
+          software manuals, and quick user guides.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+
+      <a class="footer__logo" href="#">
+        <img alt="logo" height="21" src="img/logo.svg" width="95">
+      </a>
+
+      <form class="signup">
+        <div class="signup__title">Sign up for news and special offers</div>
+        <div class="d-flex">
+          <input type="text" class="signup__input" placeholder="user@email.com">
+          <button type="submit" class="signup__button">Sign Up</button>
+        </div>
+        <div class="signup__checkbox">
+          <input type="checkbox" id="signupCheckbox" hidden>
+          <label for="signupCheckbox"></label>
+          <div class="signup__agree">
+            By signing up, you consent to receive our marketing emails and agree to Movavi using your personal data in
+            accordance with our
+            <a href="#" class="signup__agree-link">Privacy Policy</a>
+            . You also confirm that you meet the
+            <a href="#" class="signup__agree-link">minimum age requirements</a>.
+          </div>
+
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+</footer>
+
+<div id="basket-modal" class="basket-modal">
+  <a class="basket-modal__continue-link" href="#" rel="modal:close">Continue Shopping</a>
+
+  <div class="shopping-cart">
+    <div class="shopping-cart__title">Shopping cart</div>
+    <div class="cart-items" id="cartItems"></div>
+
+
+  </div>
+  <div class="shopping-total">
+    <span>Total</span>
+    <span id="totalSum">0 руб.</span>
+  </div>
+
+  <button class="basket-modal__shopping-button">Check Out</button>
+
+  <button id="btnDeleteAll" class="basket-modal__delete-all-button">Delete All</button>
+</div>
+
+<div id="promotionEnd" class="promotion-end">
+  Акция на товары со скидкой завершена
+</div>
+
+<div id="toast-wrap" class="jq-toast-wrap bottom-right" role="alert" aria-live="polite">
+  <div class="jq-toast-single jq-has-icon jq-icon-info" style="text-align: center;"><span
+      class="jq-toast-loader"></span>
+    <h2 class="jq-toast-heading">Акция</h2>
+    <span id="timeLeft">Загрузка...</span>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="js/jquery-toast-plugin-master/dist/jquery.toast.min.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/buy.js"></script>
+</body>
+</html>

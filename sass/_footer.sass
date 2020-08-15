@@ -1,0 +1,97 @@
+.footer
+  background: #212121
+
+  &__logo
+    height: 21px
+
+  &__content
+    padding: 50px 0 50px
+    display: flex
+    justify-content: space-between
+
+.signup
+  display: flex
+  flex-direction: column
+  width: 538px
+  color: #fff
+
+  &__title
+    font-weight: bold
+    padding-bottom: 12px
+
+  &__input
+    border-radius: 5px 0 0 5px
+    background: #616161
+    padding: 16px
+    height: 45px
+    color: #fff
+    border: none
+    outline: none
+    flex-grow: 1
+    margin-right: -24px
+
+    &::placeholder
+      color: #fff
+
+  &__button
+    @extend %btn-default
+    border-radius: 0 5px 5px 0
+    min-width: 106px
+    height: 45px
+    color: #fff
+    background: #3581d5
+
+    &:hover,
+    &:active
+      opacity: .85
+
+  &__agree
+    font-size: 12px
+    line-height: 1.5
+
+    &-link
+      color: #1962b2
+
+      &:hover,
+      &:active
+        text-decoration: underline
+
+  &__checkbox
+    display: flex
+    padding: 25px 0 0 32px
+    position: relative
+
+    label
+      transition: .3s
+
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        width: 13px
+        height: 13px
+        border: 1px solid #616161
+        border-radius: 2px
+        background: transparent center
+        transition: .3s
+        cursor: pointer
+        transform: translateY(4px)
+
+      &:hover
+        opacity: .7
+
+    input:checked + label::before
+      background-image: url("../img/check.svg")
+      background-repeat: no-repeat
+      background-size: 18px
+      border: none
+
+@media (max-width: 720px)
+  .footer
+    &__content
+      flex-direction: column
+    &__logo
+      margin-bottom: 32px
+
+  .signup
+    width: auto

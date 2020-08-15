@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap')
+@import url('../fonts/fontawesome-pro-5.14.0/css/all.css')
+
+@import normalize
+@import icons
+@import button
+@import flex
+@import modal
+@import mixins
+
+@import header
+@import video-suite
+@import support
+@import footer
+
+
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  display: inline-block
+
+ul,
+li
+  list-style: none
+  margin: 0
+  padding: 0
+
+body
+  font-family: "Open Sans"
+  font-size: 16px
+
+::-webkit-scrollbar
+  display: none
+
+%container
+  max-width: 1138px
+  margin: 0 auto
+  padding: 0 15px
+  min-height: 100%
+  height: 100%
+
+
+.container
+  @extend %container
+
+  &__suite
+    @extend %container
+    padding-top: 28px
+
+
+.block-divider
+  height: 1px
+  width: 32px
+  flex-shrink: 0
+
+.d-flex
+  display: flex
+
+.font-bold
+  font-weight: 700
+
+
+
+
+
